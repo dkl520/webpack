@@ -5,7 +5,8 @@ module.exports = {
   },
   module: {
     // 模块化扩展的时候的配置
-    rules: [{
+    rules: [
+      {
       test: /\.js$/,
       // 匹配的文件
       exclude: /node_modules/,
@@ -18,7 +19,8 @@ module.exports = {
           plugins: ["transform-vue-jsx"]
         }
       }
-    }, {
+    },
+     {
       test: /\.scss$/,
       use: [
         {
